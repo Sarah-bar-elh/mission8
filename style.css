@@ -1,0 +1,101 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: black; /* Fond sombre pour s'adapter à l'image */
+    color: white; /* Texte en blanc pour un meilleur contraste */
+    background-image: url('fond.jpg'); /* Assurez-vous de remplacer par le chemin correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* En-tête */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent pour se fondre dans le fond */
+    color: #e73d3d; /* Couleur dorée pour contraster avec le fond sombre */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Effet de brillance */
+}
+
+header p {
+    font-size: 1rem;
+    margin: 5px 0 0;
+}
+
+/* Section principale */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    border-bottom: 2px solid #ffc107; /* Ligne dorée */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #ffc107;
+}
+
+#exercises-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exercise-card {
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Lignes subtiles */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Ombre légère pour du relief */
+    color: white;
+}
+
+.exercise-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffc107;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.exercise-card p {
+    margin: 10px 0;
+    color: #ddd;
+}
+
+.exercise-card .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+button.solution {
+    background-color: #ffc107; /* Couleur dorée */
+    color: black;
+}
+
+button.demo {
+    background-color: #7e0c0c; /* Couleur verte pour différencier */
+    color: white;
+}
+
+/* Ajout d'un effet de survol */
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
